@@ -25,7 +25,7 @@ def valida_questao(questao):
         titulo = questao['titulo']
         titulo_vazio = True
         for caractere in titulo:
-            if not caractere.isspace():
+            if not caractere.keys():
                 titulo_vazio = False
                 break
         if titulo_vazio:
